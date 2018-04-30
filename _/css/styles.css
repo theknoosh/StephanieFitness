@@ -1,1 +1,1 @@
-body{color:#43CBA5}#videoDiv{width:100%;height:360px;position:relative}#videoBlock{width:75%;height:75%;display:flex;margin:0 auto;justify-content:center}
+body{background-color:#fffbce}.hero .layout{width:100%;display:flex;margin:0 auto;justify-content:left;background-color:#381301}ul{list-style-type:none;margin:0;padding:0;width:100%;height:35px;background-color:#43074A}ul li{float:left}ul li a{display:block;color:white;padding:8px 16px;text-decoration:none;text-align:center}ul li a:hover{background-color:tomato}
