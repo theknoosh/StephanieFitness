@@ -7,16 +7,51 @@ body {
     background-color: $backgroundColor;
 }
 
+#videoBlock {
+    // width: 75%;
+    
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: $headerBackground;
+
+    #video {
+        width: 100%;
+    }
+}
+
 
 .hero {
     .layout {
         width: 100%;
-        // height: 100px;
+        // height: 150px;
         display: flex;
-        margin: 0 auto;
-        justify-content: left;
-        background-color: $mycolor;
+        margin: 0;
+        justify-content: center;
+        background-color: $darkgreen;
     }
+}
+.box {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+
+    animation: slide 1s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes slide {
+    from {transform: translateX(0);}
+    to {transform: translateX(900px);}
 }
 
 ul {
@@ -25,7 +60,7 @@ ul {
     padding: 0;
     width: 100%;
     height: 35px;
-    background-color: $darkpurple;
+    background-color: $lightgreen;
     li {
         float: left;
     }
@@ -35,8 +70,12 @@ ul {
         padding: 8px 16px;
         text-decoration: none;
         text-align: center;
+        transition: background-color .5s ease-in, transform .5s .25s ease-in-out;
     }
+
+    // This transition is just changing the background color and size of the button on hover
     li a:hover {
         background-color: tomato;
+        // transform: scale(1.2);
     }
 }
