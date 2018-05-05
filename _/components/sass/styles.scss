@@ -71,11 +71,12 @@ ul {
         text-decoration: none;
         text-align: center;
         transition: background-color .5s ease-in, transform .5s .25s ease-in-out;
+        transition: color .5s;
     }
 
-    // This transition is just changing the background color and size of the button on hover
     li a:hover {
-        background-color: tomato;
-        // transform: scale(1.2);
+        background-color: yellow;
+        transform: scale(1.2);
+        color: black;
     }
 }
