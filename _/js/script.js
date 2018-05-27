@@ -1,1 +1,1 @@
-function test(){return"Hello World, Darrell Payne"}
+function animation(){$("#progressbar").animate({opacity:1},{duration:1e3,easing:"linear"}),$(".navigation").animate({top:"0px",opacity:"1"},{duration:1e3,easing:"linear"})}function myhandler(a){$("#video").animate({opacity:"0"},{duration:500,easing:"linear"})}$("document").ready(function(){animation(),document.getElementById("video").addEventListener("ended",myhandler,!1),$("#progressbar").addClass("animate")});
